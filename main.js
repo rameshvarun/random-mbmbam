@@ -10,8 +10,10 @@ $(function() {
 
       var ret = {};
       ret.title = $item.find("title").html();
-      ret.desc = $item.find("description").html().replace("<![CDATA[<p>", "").replace("]]>", "").trim();
+      ret.desc = $item.find("description").html().replace("<p></p>", "").replace("<p> </p>", "").replace("<![CDATA[", "").replace("]]>", "").trim();
       ret.url = $item.find("media\\:content").attr("url");
+      ret.pubDate = $item.find("pubDate").html();
+
       ret.live = ret.title.toLowerCase().includes("Face 2 Face");
       ret.compilation = ret.title.toLowerCase().includes("Bro's Better, Bro's Best");
 
@@ -36,6 +38,7 @@ $(function() {
       } while ((ep.live && !live) || (ep.compilation && !compilation))
 
       $("#display-title").html(ep.title);
+      $("#display-date").html(ep.pubDate);
       $("#display-desc").html(ep.desc);
       source.src = ep.url;
       audio.load();
@@ -45,7 +48,7 @@ $(function() {
     loadNextEpisode();
     $("#loaded").show();
 
-    $("#refresh-button").on('click', function() {
+    $("#next").on('click', function() {
       loadNextEpisode();
     });
 

@@ -11,10 +11,13 @@
     <!-- Font Awesome CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <link href="site.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <h1>Random MBMBAM</h1>
+      <div class="page-header">
+        <h1>Random MBMBAM</h1>
+      </div>
 
       <div id="loading">
         <i class="fa fa-circle-o-notch fa-4x fa-spin" aria-hidden="true"></i>
@@ -24,15 +27,21 @@
         <label class="checkbox-inline">
           <input id="live-show-toggle" checked data-toggle="toggle" type="checkbox"> Live Shows
         </label>
+        
         <label class="checkbox-inline">
           <input id="compilation-toggle" checked data-toggle="toggle" type="checkbox"> Compilations
         </label>
 
         <h3 id="display-title"></h3>
+        <h5 id="display-date"></h5>
+
         <audio id="audio-player" controls>
           <source id="audio-source" src=""></source>
         </audio>
-        <button id="refresh-button" type="button" class="btn btn-secondary"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+
+        <div id="prev-next">
+            <a id="next" href="#" class="page-link">Next <span aria-hidden="true">&raquo;</span></a>
+        </div>
 
         <div id="display-desc"></div>
 

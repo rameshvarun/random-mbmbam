@@ -1,0 +1,13 @@
+#loading {
+  text-align: center;
+}
+
+#audio-player {
+  width: 100%;
+}
+
+#prev-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
