@@ -14,8 +14,8 @@ $(function() {
       ret.url = $item.find("media\\:content").attr("url");
       ret.pubDate = $item.find("pubDate").html();
 
-      ret.live = ret.title.toLowerCase().includes("Face 2 Face");
-      ret.compilation = ret.title.toLowerCase().includes("Bro's Better, Bro's Best");
+      ret.live = ret.title.toLowerCase().includes("face 2 face");
+      ret.compilation = ret.title.toLowerCase().includes("bro's better, bro's best");
 
       return ret;
     });
@@ -31,17 +31,28 @@ $(function() {
     function loadNextEpisode() {
       var live = $("#live-show-toggle").is(":checked");
       var compilation = $("#compilation-toggle").is(":checked");
+      var skip_intro = $("#skip-intro-toggle").is(":checked");
 
-      do {
+      while (true) {
         ++ep_index;
         var ep = episodes[ep_index % episodes.length];
-      } while ((ep.live && !live) || (ep.compilation && !compilation))
+
+        if ((ep.live && !live) || (ep.compilation && !compilation)) {
+          console.log("Skipping '%s'...", ep.title);
+          continue;
+        }
+        break;
+      }
 
       $("#display-title").html(ep.title);
       $("#display-date").html(ep.pubDate);
       $("#display-desc").html(ep.desc);
       source.src = ep.url;
       audio.load();
+
+      if (skip_intro && !ep.live) {
+        audio.currentTime = 40;
+      }
     }
 
     $("#loading").hide();
