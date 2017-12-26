@@ -3,8 +3,8 @@
 	<channel>
 		
 		<title>My Brother, My Brother And Me</title>
-		<pubDate>Mon, 18 Dec 2017 18:41:24 +0000</pubDate>
-		<lastBuildDate>Mon, 18 Dec 2017 18:41:52 +0000</lastBuildDate>
+		<pubDate>Tue, 26 Dec 2017 21:57:14 +0000</pubDate>
+		<lastBuildDate>Tue, 26 Dec 2017 21:57:29 +0000</lastBuildDate>
 		<generator>Libsyn WebEngine 2.0</generator>
 		<link>http://www.mbmbam.com</link>
 		<language>en</language>
@@ -29,6 +29,21 @@
 		<itunes:subtitle>Free advice from three of the world's most qualified, most related experts: Justin, Travis and Griffin McElroy. For one-half to three-quarters of an hour every Monday, we tell people how to live their lives, because we're obviously doing such a great job </itunes:subtitle>
 		<itunes:type>episodic</itunes:type>
 				<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/mbmbam" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="mbmbam" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:copyright>Justin, Travis and Griffin McElroy</media:copyright><media:thumbnail url="http://static.libsyn.com/p/assets/6/d/7/d/6d7d36d6929db515/MBMBAM_Update.jpg" /><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Comedy</media:category><itunes:category text="Comedy" /><item>
+			<title>Candlenights 2017</title>
+			<pubDate>Tue, 26 Dec 2017 21:57:14 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[9801a719c4d28de9cb7316308c333889]]></guid>
+			<link><![CDATA[http://mbmbam.libsyn.com/candlenights-2017]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/6/d/7/d/6d7d36d6929db515/MBMBAM_Update.jpg" />
+			<description><![CDATA[<p>Here we are again, friends, with our beloved annual swear-free episode of MBMBaM. Gather those you love around the Podcast Victrola and enjoy.</p> <p><strong>Suggested talking points</strong>: Rockin' Randy the Safe Sex Santa, Proof that Trickle Down Economics Works, The Grinch Totally Naked, Drinking Frosty the Snowman.</p>]]></description>
+			<content:encoded><![CDATA[<p>Here we are again, friends, with our beloved annual swear-free episode of MBMBaM. Gather those you love around the Podcast Victrola and enjoy.</p> <p>Suggested talking points: Rockin' Randy the Safe Sex Santa, Proof that Trickle Down Economics Works, The Grinch Totally Naked, Drinking Frosty the Snowman.</p>]]></content:encoded>
+			<enclosure length="67095404" type="audio/mpeg" url="http://traffic.libsyn.com/mbmbam/MBMBaM386.mp3?dest-id=18443" />
+			<itunes:duration>01:09:36</itunes:duration>
+			<itunes:explicit>clean</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Here we are again, friends, with our beloved annual swear-free episode of MBMBaM. Gather those you love around the Podcast Victrola and enjoy. Suggested talking points: Rockin' Randy the Safe Sex Santa, Proof that Trickle Down Economics Works, The...]]></itunes:subtitle>
+			<itunes:episodeType>full</itunes:episodeType>
+					<media:content url="http://traffic.libsyn.com/mbmbam/MBMBaM386.mp3?dest-id=18443" fileSize="67095404" type="audio/mpeg" /><itunes:summary>Free advice from three of the world's most qualified, most related experts: Justin, Travis and Griffin McElroy. For one-half to three-quarters of an hour every Monday, we tell people how to live their lives, because we're obviously doing such a great job of it so far.</itunes:summary></item>
+		<item>
 			<title>MBMBaM 385: Horses in the Drift</title>
 			<pubDate>Mon, 18 Dec 2017 18:41:24 +0000</pubDate>
 			<guid isPermaLink="false"><![CDATA[e65318c7fa0ce3bb4d4ea2065f9e29fd]]></guid>
