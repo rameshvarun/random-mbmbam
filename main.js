@@ -31,6 +31,7 @@ $(function() {
     function loadNextEpisode() {
       var live = $("#live-show-toggle").is(":checked");
       var compilation = $("#compilation-toggle").is(":checked");
+      var skip_intro = $("#skip-intro-toggle").is(":checked");
 
       while (true) {
         ++ep_index;
@@ -48,6 +49,10 @@ $(function() {
       $("#display-desc").html(ep.desc);
       source.src = ep.url;
       audio.load();
+
+      if (skip_intro && !ep.live) {
+        audio.currentTime = 40;
+      }
     }
 
     $("#loading").hide();
