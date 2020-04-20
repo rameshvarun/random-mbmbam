@@ -5,27 +5,38 @@ $(function() {
 
   var episodes = xmlDoc.then(function(doc) {
     var rss = doc.documentElement;
-    return $(rss).find("channel > item").map(function(i, item) {
-      var $item = $(item);
+    return $(rss)
+      .find("channel > item")
+      .map(function(i, item) {
+        var $item = $(item);
 
-      var ret = {};
-      ret.title = $item.find("title").html();
-      ret.desc = $item.find("description").html().replace("<p></p>", "").replace("<p> </p>", "").replace("<![CDATA[", "").replace("]]>", "").trim();
-      ret.url = $item.find("media\\:content").attr("url");
-      ret.pubDate = $item.find("pubDate").html();
+        var ret = {};
+        ret.title = $item.find("title").html();
+        ret.desc = $item
+          .find("description")
+          .html()
+          .replace("<p></p>", "")
+          .replace("<p> </p>", "")
+          .replace("<![CDATA[", "")
+          .replace("]]>", "")
+          .trim();
+        ret.url = $item.find("media\\:content").attr("url");
+        ret.pubDate = $item.find("pubDate").html();
 
-      ret.live = ret.title.toLowerCase().includes("face 2 face");
-      ret.compilation = ret.title.toLowerCase().includes("bro's better, bro's best");
+        ret.live = ret.title.toLowerCase().includes("face 2 face");
+        ret.compilation = ret.title
+          .toLowerCase()
+          .includes("bro's better, bro's best");
 
-      return ret;
-    });
+        return ret;
+      });
   });
 
   episodes = episodes.then(_.shuffle);
   var ep_index = -1;
 
-  var audio = document.getElementById('audio-player');
-  var source = document.getElementById('audio-source');
+  var audio = document.getElementById("audio-player");
+  var source = document.getElementById("audio-source");
 
   episodes.then(function(episodes) {
     function loadNextEpisode() {
@@ -59,7 +70,7 @@ $(function() {
     loadNextEpisode();
     $("#loaded").show();
 
-    $("#next").on('click', function() {
+    $("#next").on("click", function() {
       loadNextEpisode();
     });
 
@@ -68,7 +79,4 @@ $(function() {
       audio.play();
     });
   });
-
-
-
 });
