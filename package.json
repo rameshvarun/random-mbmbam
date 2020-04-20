@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "start": "live-server .",
+    "format": "prettier --write *.js *.html"
+  }
+}
