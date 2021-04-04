@@ -20,7 +20,7 @@ $(function() {
           .replace("<![CDATA[", "")
           .replace("]]>", "")
           .trim();
-        ret.url = $item.find("media\\:content").attr("url");
+        ret.url = $item.find("enclosure").attr("url");
         ret.pubDate = $item.find("pubDate").html();
 
         ret.live = ret.title.toLowerCase().includes("face 2 face");

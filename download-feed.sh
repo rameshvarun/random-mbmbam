@@ -1,1 +1,1 @@
-curl -o mbmbam-feed.xml http://feeds.feedburner.com/mbmbam.xml
+curl -o mbmbam-feed.xml https://feeds.simplecast.com/wjQvYtdl
